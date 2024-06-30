@@ -1,75 +1,71 @@
-
-
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    text-align: left;
-    color: rgb(0, 38, 255);
-    background-color: seashell;
-    overflow: hidden;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-
-#title {
-    font-size: 6rem;
-    letter-spacing: -2px;
-    line-height: 0.9em;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    transition: 0.25s;
-    z-index: 1;
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.title-small {
-    /* Your CSS styles for elements with class "title-small" go here */
-    font-size: 2rem !important;
-    letter-spacing: -1.25px !important;
-    width: calc(100vw - 100px);
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.fall-animation {
-    animation: fallDown 1s ease forwards;
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
 }
 
-@keyframes fallDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+main {
+    padding: 20px;
 }
 
-#world {
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
+    bottom: 0;
 }
-  
-#vertical {
-    width: 12px;
-    height: 70px;
-    background-color: seagreen;
-    position: absolute;
-    left: 29px;
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
 }
-  
-#horizontal{
-    width: 70px;
-    height: 12px;
-    position: absolute;
-    top: 29px;
-    background-color: seagreen;
+
+button {
+    display: block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ab8;
 }
